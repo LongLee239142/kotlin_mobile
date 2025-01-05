@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_marginTop="100dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hobbies: "
+        android:textColor="#2196F3"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <CheckBox
+        android:id="@+id/chListenMussic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Listen music"
+        android:textColor="#f20"
+        tools:layout_editor_absoluteX="-10dp"
+        tools:layout_editor_absoluteY="27dp" />
+
+    <CheckBox
+        android:id="@+id/chWatchMovie"
+        android:layout_width="match_parent"
+        android:textColor="#f20"
+        android:layout_height="wrap_content"
+        android:text="Watch Movie" />
+
+    <CheckBox
+        android:id="@+id/chPlaySoccer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Play Soccer"
+        android:textColor="#f20"
+        tools:layout_editor_absoluteX="-10dp"
+        tools:layout_editor_absoluteY="27dp" />
+
+    <CheckBox
+        android:id="@+id/chPlayGame"
+        android:layout_width="match_parent"
+        android:textColor="#f20"
+        android:layout_height="wrap_content"
+        android:text="Play Game" />
+
+    <CheckBox
+        android:id="@+id/chWorkDate"
+        android:layout_width="match_parent"
+        android:textColor="#f20"
+        android:layout_height="wrap_content"
+        android:text="Work date" />
+
+    <Button
+        android:id="@+id/btnChoose"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:text="Choose Hobbies"
+        android:textColor="@android:color/white"
+        android:textColorLink="#2196F3"
+        app:rippleColor="#2196F3" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#2196F3"
+        android:text="Your Hobbies are: " />
+
+    <EditText
+        android:id="@+id/edtHobbies"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Your hobbies will be display here"
+        android:inputType="text|textMultiLine" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Gender: "
+        android:textColor="#2196F3"
+        android:textSize="20sp"/>
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="105dp" >
+
+        <RadioButton
+            android:id="@+id/radFemale"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Female" />
+
+        <RadioButton
+            android:id="@+id/radMale"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Male" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btnConfirm"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:text="Confirm" />
+
+</LinearLayout>

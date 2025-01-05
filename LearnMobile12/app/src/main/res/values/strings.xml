@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string-array name="language">
+        <item>English</item>
+        <item>VietNam</item>
+        <item>China</item>
+    </string-array>
+</resources>

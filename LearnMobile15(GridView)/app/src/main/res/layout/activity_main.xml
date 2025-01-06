@@ -11,7 +11,7 @@
     <GridView
         android:layout_marginTop="50dp"
         android:id="@+id/gvMovie"
-        android:layout_marginStart="15dp"
+        android:layout_marginStart="20dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:numColumns="2" />

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:background="@drawable/layout_background_linear"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:textSize="50sp"
+        android:text="Let's Go" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:layout_height="wrap_content"
+        android:text="Welcome to LongLee's Software" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:layout_height="wrap_content"
+        android:text="Good luck with your studies" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button"
+        android:layout_width="220dp"
+        android:layout_gravity="center"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:background="@drawable/layout_button"
+        android:layout_marginTop="12dp"
+        android:layout_height="wrap_content"
+        android:text="Get Access" />
+</LinearLayout>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.example.myapplication.FireworksView
+        android:id="@+id/fireworksView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#000000"
+        tools:ignore="MissingClass" />
+
+    <TextView
+        android:id="@+id/tvHappyNewYear"
+        android:layout_width="283dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:shadowColor="#FF0000"
+        android:shadowDx="2"
+        android:shadowDy="2"
+        android:shadowRadius="10"
+        android:text="LongLee Chúc mừng năm mới"
+        android:textColor="#FFD700"
+        android:textSize="32sp"
+        android:textStyle="bold" />
+
+</FrameLayout>

@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="welcome">Welcome!</string>
+    <string name="sign_up_or_login_to_your_account">Sign up or Login to your Account</string>
+    <string name="login">Login</string>
+    <string name="email_address">Email Address</string>
+    <string name="enter_your_email">Enter your Email</string>
+    <string name="password">Password</string>
+    <string name="enter_your_password">Enter your Password</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="this_is_underlined_text">This is underlined text</string>
+    <string name="this_inline">This inline</string>
+    <string name="or_login_using">Or Login Using:</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="_000_000_0000">000 000 0000</string>
+</resources>

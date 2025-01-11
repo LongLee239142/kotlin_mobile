@@ -23,7 +23,6 @@ class MainActivity : AppCompatActivity() {
         // Gắn binding với layout
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
-
         // gọi màn hình 2 từ màn hình main
         binding.btnGo.setOnClickListener {
             val intent1 = Intent(this,MainActivity2::class.java)

@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="browse_through_our_extensive_list_of_restaurants_and_dishes_and_when_you_re_ready_to_order_simply_add_your_desired_items_to_your_cart_and_checkout_it_s_that_easy">Browse through our extensive list of restaurants and dishes, and when you\'re ready to order, simply add your desired items to your cart and checkout. It\'s that easy!</string>
+    <string name="wide_range_of_food_categories_amp_more"><![CDATA[Wide range of Food Categories & more]]></string>
+    <string name="skip">Skip</string>
+    <string name="next">Next</string>
+    <string name="free_deliveries_for_one_month">Free Deliveries for ONE MONTH!!</string>
+    <string name="illstrantion_here">ILLSTRANTION HERE</string>
+    <string name="get_your_favorite_meals_delivered_to_your_doorstep_for_free_with_our_online_food_delivery_app_enjoy_a_whole_month_of_complimentary_delivery">Get your favorite meals delivered to your doorstep for free with our online food delivery app - enjoy a whole month of complimentary delivery!</string>
+    <string name="please_create_an_account_or_sign_in_to_your_existing_account_to_start_browsing_our_selection_of_delicious_meals_from_your_favorite_restaurants">Please create an account or sign in to your existing account to start browsing our selection of delicious meals from your favorite restaurants.</string>
+    <string name="get_started_on_ordering_your_food">Get started on Ordering your Food</string>
+</resources>

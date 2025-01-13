@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Title -->
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="start|center_vertical"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/back_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_arrow_back"
+                android:drawablePadding="8dp"
+                android:text="Back"
+                android:textSize="16sp"
+                android:textColor="#000000"
+                android:background="@android:color/transparent"
+                android:padding="8dp"
+                android:fontFamily="sans-serif" />
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/verify_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-medium"
+            android:marginBottom="16dp"
+            android:text="@string/verify_phone_number"
+            android:textColor="#000000"
+            android:textSize="36sp" />
+
+        <!-- Subtitle -->
+        <TextView
+            android:id="@+id/verify_subtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:marginBottom="24dp"
+            android:text="@string/we_have_sent_you_a_6_digit_code_please_enter_here_to_verify_your_number"
+            android:textColor="#666666"
+            android:textSize="14sp" />
+
+        <!-- Phone Number Display -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/phone_number"
+                android:layout_width="150dp"
+                android:layout_height="35dp"
+                android:fontFamily="sans-serif"
+                android:background="@drawable/custom_numberphone"
+                android:text="@string/_1_169_916_9564"
+                android:gravity="center"
+                android:textColor="#333333"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/edit_icon"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginStart="8dp"
+                android:contentDescription="@string/edit_phone_number"
+                android:src="@drawable/ic_edit" />
+        </LinearLayout>
+
+        <!-- Code Input -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:gravity="center"
+            android:marginTop="32dp"
+            android:marginBottom="24dp"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/code_digit_1"
+                android:layout_width="48dp"
+                android:layout_height="56dp"
+                android:background="@drawable/border"
+                android:gravity="center"
+                android:inputType="number"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/code_digit_2"
+                android:layout_width="48dp"
+                android:layout_height="56dp"
+                android:layout_marginStart="8dp"
+                android:background="@drawable/border"
+                android:gravity="center"
+                android:inputType="number"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/code_digit_3"
+                android:layout_width="48dp"
+                android:layout_height="56dp"
+                android:layout_marginStart="8dp"
+                android:background="@drawable/border"
+                android:gravity="center"
+                android:inputType="number"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/code_digit_4"
+                android:layout_width="48dp"
+                android:layout_height="56dp"
+                android:layout_marginStart="8dp"
+                android:background="@drawable/border"
+                android:gravity="center"
+                android:inputType="number"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/code_digit_5"
+                android:layout_width="48dp"
+                android:layout_height="56dp"
+                android:layout_marginStart="8dp"
+                android:background="@drawable/border"
+                android:gravity="center"
+                android:inputType="number"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/code_digit_6"
+                android:layout_width="48dp"
+                android:layout_height="56dp"
+                android:layout_marginStart="8dp"
+                android:background="@drawable/border"
+                android:gravity="center"
+                android:inputType="number"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <!-- Resend Code -->
+        <TextView
+            android:id="@+id/resend_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="24dp"
+            android:text="@string/didn_t_receive_code_get_a_new_one"
+            android:textColor="#FF4081"
+            android:textSize="14sp" />
+
+        <!-- Verify Button -->
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/verify_button"
+            android:layout_width="match_parent"
+            android:layout_height="61dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/custom_button3"
+            android:text="@string/verify_and_continue"
+            android:textColor="#FFFFFF" />
+
+    </LinearLayout>
+</ScrollView>

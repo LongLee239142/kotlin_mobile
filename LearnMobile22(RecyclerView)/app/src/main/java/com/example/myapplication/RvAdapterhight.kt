@@ -5,17 +5,17 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.example.myapplication.databinding.LayoutItemBinding
 
-class RvAdapterhight(var ds: List<OutData>, val onMoiveClick:RvInterface) : RecyclerView.Adapter<RvAdapterhight.PhimViewHolder>() {
+class RvAdapterhight(var ds: List<OutData>, val onMoiveClick:RvInterface) : RecyclerView.Adapter<RvAdapterhight.MovieViewHolder>() {
 
-    inner class PhimViewHolder(val binding: LayoutItemBinding) : RecyclerView.ViewHolder(binding.root)
+    inner class MovieViewHolder(val binding: LayoutItemBinding) : RecyclerView.ViewHolder(binding.root)
 
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): PhimViewHolder {
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MovieViewHolder {
         // Sử dụng LayoutItemBinding.inflate để khởi tạo ViewBinding
         val binding = LayoutItemBinding.inflate(LayoutInflater.from(parent.context), parent, false)
-        return PhimViewHolder(binding)
+        return MovieViewHolder(binding)
     }
 
-    override fun onBindViewHolder(holder: PhimViewHolder, position: Int) {
+    override fun onBindViewHolder(holder: MovieViewHolder, position: Int) {
         // Truy cập ViewBinding thông qua holder
         holder.binding.apply {
             imgMovie.setImageResource(ds[position].images)

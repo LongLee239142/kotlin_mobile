@@ -14,4 +14,10 @@
     <string name="forgot_password">Forgot Password?</string>
     <string name="phone_number">Phone Number</string>
     <string name="_000_000_0000">000 000 0000</string>
+    <string name="verify_phone_number">Verify Phone Number</string>
+    <string name="we_have_sent_you_a_6_digit_code_please_enter_here_to_verify_your_number">We have sent you a 6 digit code. Please enter here to Verify your Number.</string>
+    <string name="_1_169_916_9564">+1 169 916 9564</string>
+    <string name="verify_and_continue">Verify and Continue</string>
+    <string name="didn_t_receive_code_get_a_new_one">Didn’t Receive Code? Get a New one</string>
+    <string name="edit_phone_number">Edit Phone Number</string>
 </resources>

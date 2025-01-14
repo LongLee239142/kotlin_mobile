@@ -1,0 +1,246 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F9F9F9"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Location and Order Now -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnLocation"
+                android:layout_width="182dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/custom_button2"
+                android:backgroundTint="#FFF4E5"
+                android:text="@string/_32_kingston_ln"
+                android:textColor="#F5A623" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnOrderNow"
+                android:layout_width="183dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/custom_button2"
+                android:drawableStart="@drawable/clock"
+                android:fontFamily="sans-serif-medium"
+                android:gravity="center"
+                android:paddingLeft="25sp"
+                android:paddingRight="25sp"
+                android:text="@string/oder_now"
+                android:textColor="#F5A623"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="48dp"
+                tools:layout_editor_absoluteY="36dp" />
+
+        </LinearLayout>
+
+        <!-- Greeting -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/good_evening_luisa"
+            android:textColor="#333"
+            android:textSize="25sp" />
+
+        <!-- Search Bar -->
+        <EditText
+            android:id="@+id/etSearch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:padding="20dp"
+            android:backgroundTint="#DDD"
+            android:drawableStart="@drawable/ic_search"
+            android:hint="@string/search_food_restaurants_etc" />
+
+        <!-- Categories -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="Categories"
+            android:textColor="#333"
+            android:textStyle="bold" />
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:columnCount="3"
+            android:rowCount="2">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:src="@drawable/ic_burgers" />
+            <!-- Add other categories (Grocery, Salad, etc.) here -->
+
+            <!-- Burgers -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:layout_margin="8dp"
+                    android:backgroundTint="#FCE6E6"
+                    android:src="@drawable/ic_burgers" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="Burgers"
+                    android:textColor="#333"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <!-- Grocery -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:layout_margin="8dp"
+                    android:backgroundTint="#FCE6E6"
+                    android:src="@drawable/ic_grocery" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="Grocery"
+                    android:textColor="#333"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <!-- Add remaining categories (e.g., Salads, Sweets, Utensils) -->
+        </GridLayout>
+
+        <!-- Offers Near You -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="Offers Near You"
+            android:textColor="#333"
+            android:textStyle="bold" />
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="200dp"
+                    android:layout_height="120dp"
+                    android:layout_marginEnd="8dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/ic_burger_offer" />
+
+                <!-- Add more offer items -->
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <!-- New & Trending -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="@string/new_amp_trending"
+            android:textColor="#333"
+            android:textStyle="bold" />
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:columnCount="2">
+
+            <!-- Harvey's -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="100dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/ic_harveys" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="Harvey's"
+                    android:textColor="#333" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2.1 mi"
+                    android:textColor="#888" />
+            </LinearLayout>
+
+            <!-- KFC -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="100dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/ic_kfc" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="KFC"
+                    android:textColor="#333" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1.3 mi"
+                    android:textColor="#888" />
+            </LinearLayout>
+        </GridLayout>
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,11 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Trạng thái bình thường -->
+    <item>
+        <shape>
+            <solid android:color="#FFF4E5" /> <!-- Màu nền trắng -->
+            <corners android:radius="20dp" /> <!-- Góc bo tròn -->
+        </shape>
+    </item>
+</selector>
+

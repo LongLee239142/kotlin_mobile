@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="new_amp_trending"><![CDATA[New & Trending]]></string>
+    <string name="_32_kingston_ln">📍 32, Kingston Ln.</string>
+    <string name="order_now">Order Now</string>
+    <string name="oder_now">Oder now</string>
+    <string name="good_evening_luisa">Good Evening Luisa</string>
+    <string name="search_food_restaurants_etc">Search Food, Restaurants etc.</string>
+    <string name="back">Back</string>
+    <string name="description">description</string>
+    <string name="burgers">Burgers</string>
+    <string name="all_catergoris">All Catergoris</string>
+</resources>

@@ -29,10 +29,10 @@ class MainActivity2 : AppCompatActivity() {
             Category("Pizza", R.drawable.ic_burgers),
             Category("Chicken", R.drawable.ic_burgers),
             Category("Salads", R.drawable.image_10,"FAVS"),
-            Category("Pizza", R.drawable.image_7),
-            Category("Chicken", R.drawable.image_10,"FAVS"),
+            Category("Grocery", R.drawable.image_8),
             Category("Chicken", R.drawable.ic_burgers),
-            Category("Pizza", R.drawable.image_10),
+            Category("Chicken", R.drawable.ic_burgers),
+            Category("Chicken", R.drawable.image_10,"FAVS"),
             Category("Chinese", R.drawable.ic_burgers)
         )
         // Hàm giúp tái sử dụng logic tạo RecyclerView

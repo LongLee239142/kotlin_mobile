@@ -1,33 +1,71 @@
 package com.example.myapplication
 
+import android.annotation.SuppressLint
 import android.os.Bundle
-import androidx.activity.enableEdgeToEdge
+
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
-import com.example.myapplication.databinding.ActivityMain2Binding
-import com.example.myapplication.databinding.ActivityMainBinding
+
+import androidx.recyclerview.widget.GridLayoutManager
+import androidx.recyclerview.widget.RecyclerView
+import com.example.myapplication.allCatergories.Category
+import com.example.myapplication.allCatergories.CategoryAdapter
+
 
 class MainActivity2 : AppCompatActivity() {
-    private lateinit var binding: ActivityMain2Binding
+
+    @SuppressLint("MissingInflatedId")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        enableEdgeToEdge()
         setContentView(R.layout.activity_main2)
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
-            val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
-            insets
+
+        val recyclerView: RecyclerView = findViewById(R.id.recycler_view)
+        val recyclerView1: RecyclerView = findViewById(R.id.recycler_view2)
+
+        // Dữ liệu mẫu
+        val categories = listOf(
+            Category("Burgers", R.drawable.ic_burgers,"NEW"),
+            Category("Grocery", R.drawable.image_8),
+            Category("Salads", R.drawable.image_10),
+            Category("Pizza", R.drawable.ic_burgers),
+            Category("Chicken", R.drawable.ic_burgers),
+            Category("Salads", R.drawable.image_10,"FAVS"),
+            Category("Pizza", R.drawable.image_7),
+            Category("Chicken", R.drawable.image_10,"FAVS"),
+            Category("Chicken", R.drawable.ic_burgers),
+            Category("Pizza", R.drawable.image_10),
+            Category("Chinese", R.drawable.ic_burgers)
+        )
+        // Hàm giúp tái sử dụng logic tạo RecyclerView
+        fun setupRecyclerView(recyclerView: RecyclerView, items: List<Category>, spanCount: Int) {
+            val adapter = CategoryAdapter(items)
+            recyclerView.adapter = adapter
+            recyclerView.layoutManager = GridLayoutManager(this, spanCount)
         }
-        binding = ActivityMain2Binding.inflate(layoutInflater)
-        setContentView(binding.root)
-        val list = mutableListOf<OutData2>()
-        list.add(OutData2(R.drawable.image_7,"Item 1"))
-        list.add(OutData2(R.drawable.image_8,"Item 3"))
-        list.add(OutData2(R.drawable.image_10,"Item 4"))
-        list.add(OutData2(R.drawable.image_11,"Item 5"))
-        list.add(OutData2(R.drawable.image_12,"Item 6"))
-        val customGrid = CustomCatergories(this, list)
-        binding.categories.adapter = customGrid
+
+        val num: Int = categories.size % 3
+
+        when (num) {
+            1 -> {
+                val firstNMinusOneItems = categories.take(categories.size - 1)
+                val lastItem = categories.takeLast(1)
+
+                setupRecyclerView(recyclerView, firstNMinusOneItems, 3)
+                setupRecyclerView(recyclerView1, lastItem, 1)
+            }
+
+            2 -> {
+                val firstNMinusOneItems = categories.take(categories.size - 2)
+                val lastItems = categories.takeLast(2)
+
+                setupRecyclerView(recyclerView, firstNMinusOneItems, 3)
+                setupRecyclerView(recyclerView1, lastItems, 2)
+            }
+
+            0 -> {
+                setupRecyclerView(recyclerView, categories, 3)
+            }
+        }
+
+
     }
 }

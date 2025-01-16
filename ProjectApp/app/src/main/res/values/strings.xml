@@ -10,4 +10,5 @@
     <string name="description">description</string>
     <string name="burgers">Burgers</string>
     <string name="all_catergoris">All Catergoris</string>
+    <string name="catergory">Catergory</string>
 </resources>

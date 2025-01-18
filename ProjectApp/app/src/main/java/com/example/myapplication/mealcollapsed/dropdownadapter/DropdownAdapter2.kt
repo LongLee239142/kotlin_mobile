@@ -1,4 +1,4 @@
-package com.example.myapplication.mealcollapsed
+package com.example.myapplication.mealcollapsed.dropdownadapter
 
 import android.view.LayoutInflater
 import android.view.View
@@ -8,21 +8,22 @@ import android.widget.LinearLayout
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.myapplication.R
+import com.example.myapplication.mealcollapsed.dataoutsource.DataSource
 
-class DropdownAdapter(private val items: List<DataSource>) :
-    RecyclerView.Adapter<DropdownAdapter.ViewHolder>() {
+class DropdownAdapter2(private val items: List<DataSource>) :
+    RecyclerView.Adapter<DropdownAdapter2.ViewHolder>() {
 
     inner class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
-        val headerLayout: LinearLayout = itemView.findViewById(R.id.headerLayout)
-        val headerTitle: TextView = itemView.findViewById(R.id.headerTitle)
-        val textView : TextView = itemView.findViewById(R.id.textView)
-        val dropdownLayout: LinearLayout = itemView.findViewById(R.id.dropdownLayout)
-        val buttonPlus : ImageView = itemView.findViewById(R.id.imageView)
+        val headerLayout: LinearLayout = itemView.findViewById(R.id.headerLayout2)
+        val headerTitle: TextView = itemView.findViewById(R.id.headerTitle2)
+        val textView: TextView = itemView.findViewById(R.id.textView2)
+        val dropdownLayout: LinearLayout = itemView.findViewById(R.id.dropdownLayout2)
+        val buttonPlus: ImageView = itemView.findViewById(R.id.imageView2)
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         val view = LayoutInflater.from(parent.context)
-            .inflate(R.layout.list_item_meal_collapsed, parent, false)
+            .inflate(R.layout.list_item_meal_collapsed2, parent, false)
         return ViewHolder(view)
     }
 
@@ -30,7 +31,7 @@ class DropdownAdapter(private val items: List<DataSource>) :
         val item = items[position]
         holder.headerTitle.text = item.tilteName
         holder.textView.text = item.note
-
+//
 //         Xử lý sự kiện click để hiện/ẩn dropdown
         holder.headerLayout.setOnClickListener {
             if (holder.dropdownLayout.visibility == View.GONE) {

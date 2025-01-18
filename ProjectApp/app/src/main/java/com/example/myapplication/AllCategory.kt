@@ -11,7 +11,7 @@ import com.example.myapplication.allCatergories.Category
 import com.example.myapplication.allCatergories.CategoryAdapter
 
 
-class MainActivity2 : AppCompatActivity() {
+class AllCategory : AppCompatActivity() {
 
     @SuppressLint("MissingInflatedId")
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -24,9 +24,17 @@ class MainActivity2 : AppCompatActivity() {
         // Dữ liệu mẫu
         val categories = listOf(
             Category("Burgers", R.drawable.ic_burgers,"NEW"),
+            Category("Burgers", R.drawable.ic_burgers,"NEW"),
+            Category("Burgers", R.drawable.ic_burgers,"NEW"),
+            Category("Burgers", R.drawable.ic_burgers,"NEW"),
+            Category("Burgers", R.drawable.ic_burgers,"NEW"),
+            Category("Burgers", R.drawable.ic_burgers,"NEW"),
             Category("Grocery", R.drawable.image_8),
             Category("Salads", R.drawable.image_10),
             Category("Pizza", R.drawable.ic_burgers),
+            Category("Chicken", R.drawable.ic_burgers),
+            Category("Salads", R.drawable.image_10,"FAVS"),
+            Category("Grocery", R.drawable.image_8),
             Category("Chicken", R.drawable.ic_burgers),
             Category("Salads", R.drawable.image_10,"FAVS"),
             Category("Grocery", R.drawable.image_8),

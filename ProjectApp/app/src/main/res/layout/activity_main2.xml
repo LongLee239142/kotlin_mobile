@@ -7,7 +7,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".MainActivity2">
+    tools:context=".AllCategory">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -100,19 +100,21 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:layout_marginLeft="5dp"
+                android:layout_marginStart="5dp"
                 android:background="@color/white"
                 android:clipToPadding="false"
                 android:padding="5dp"
                 android:scrollbars="vertical"
-                app:layoutManager="androidx.recyclerview.widget.GridLayoutManager" />
+                app:layoutManager="androidx.recyclerview.widget.GridLayoutManager" >
+            </androidx.recyclerview.widget.RecyclerView>
 
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/recycler_view2"
                 android:layout_width="wrap_content"
+                android:layout_marginStart="5dp"
+                android:padding="5dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:layout_marginEnd="10dp"
                 android:background="@color/white"
                 android:clipToPadding="false"
                 android:paddingTop="0dp"

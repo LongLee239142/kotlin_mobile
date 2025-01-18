@@ -63,12 +63,14 @@
         android:padding="8dp"
         android:background="@color/white">
 
-        <TextView
-            android:id="@+id/itemDetail1"
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/dropdown_menu_meal_full1"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="BBQ Sauce\nBeef Patty\nLettuce"
-            android:textSize="14sp" />
+            android:layout_height="wrap_content" />
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/dropdown_menu_meal_full1_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
 
     </LinearLayout>
 </LinearLayout>

@@ -1,0 +1,26 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Trạng thái được chọn -->
+    <item android:state_checked="true">
+        <layer-list>
+            <!-- Vòng ngoài -->
+            <item>
+                <shape android:shape="oval">
+                    <solid android:color="#F48FB1" /> <!-- Màu hồng nhạt -->
+                </shape>
+            </item>
+            <!-- Vòng trong -->
+            <item android:width="10dp" android:height="10dp">
+                <shape android:shape="oval">
+                    <solid android:color="#C2185B" /> <!-- Màu hồng đậm -->
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+
+    <!-- Trạng thái bình thường -->
+    <item>
+        <shape android:shape="oval">
+            <solid android:color="#E0E0E0" /> <!-- Màu xám nhạt -->
+        </shape>
+    </item>
+</selector>

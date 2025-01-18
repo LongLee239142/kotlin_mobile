@@ -16,13 +16,13 @@
             android:name=".MealCollapsed"
             android:exported="true" />
         <activity
-            android:name=".CatergoryPage"
+            android:name=".CategoryPage"
             android:exported="true" />
         <activity
-            android:name=".MainActivity2"
+            android:name=".AllCategory"
             android:exported="true" />
         <activity
-            android:name=".MainActivity"
+            android:name=".HomePage"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

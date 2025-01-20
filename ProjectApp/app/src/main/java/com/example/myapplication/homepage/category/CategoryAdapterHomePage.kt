@@ -1,11 +1,14 @@
 package com.example.myapplication.homepage.category
 
 import android.annotation.SuppressLint
+import android.graphics.Color
 import android.view.LayoutInflater
+import android.view.MotionEvent
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
+import android.widget.Toast
 import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.RecyclerView
 import com.example.myapplication.R
@@ -64,16 +67,48 @@ class CategoryAdapterHomePage(private val categories: List<Category>) :
                         holder.label.setBackgroundResource(R.drawable.label_background)
                         holder.label.text = "NEW"
                     }
+
                     "FAVS" -> {
                         holder.label.setBackgroundResource(R.drawable.label_background2)
                         holder.label.text = "FAVS"
                     }
                 }
             }
-        } else if (holder is ExtraViewHolder) {
-            // Thiết lập nội dung cho View bổ sung
-            holder.imageItem.setImageResource(R.drawable.arrow_right)
-            holder.nameItem.text ="See all"
+        }
+//        else if (holder is ExtraViewHolder) {
+//            // Thiết lập nội dung cho View bổ sung
+//            holder.imageItem.setImageResource(R.drawable.arrow_right)
+//            holder.nameItem.text = "See all"
+//
+//            // Xử lý sự kiện onclick
+//            holder.itemView.setOnClickListener {
+//                Toast.makeText(holder.itemView.context, "See all clicked", Toast.LENGTH_SHORT).show()
+//
+//                // Đổi hình ảnh và màu chữ khi click
+//                holder.imageItem.setImageResource(R.drawable.arrow_right_blue)
+//                holder.nameItem.setTextColor(Color.parseColor("#45B8E9"))
+//            }
+//        }
+        else if (holder is ExtraViewHolder) {
+            holder.imageItem.setImageResource(R.drawable.arrow_right) // Ảnh mặc định
+            holder.nameItem.text = "See all" // Văn bản mặc định
+
+            var isClicked = false // Biến trạng thái click
+
+            // Xử lý sự kiện onClick
+            holder.itemView.setOnClickListener {
+                isClicked = !isClicked // Đảo trạng thái
+
+                if (isClicked) {
+                    // Trạng thái khi click
+                    holder.imageItem.setImageResource(R.drawable.arrow_right_blue)
+                    holder.nameItem.setTextColor(Color.parseColor("#45B8E9"))
+                } else {
+                    // Trạng thái mặc định
+                    holder.imageItem.setImageResource(R.drawable.arrow_right)
+                    holder.nameItem.setTextColor(Color.BLACK)
+                }
+            }
         }
     }
 

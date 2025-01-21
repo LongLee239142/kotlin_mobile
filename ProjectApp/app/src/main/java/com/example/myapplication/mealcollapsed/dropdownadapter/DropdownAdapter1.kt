@@ -6,6 +6,7 @@ import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.LinearLayout
 import android.widget.TextView
+import android.widget.Toast
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.myapplication.R
@@ -51,6 +52,7 @@ class DropdownAdapter1(private val items: List<DataSource>,private val itemsDrop
                 holder.dropdownLayout.visibility = View.GONE
                 holder.buttonPlus.setImageResource(R.drawable.add)
             }
+
         }
 //        holder.buttonPlus.setOnClickListener {
 //            if (holder.dropdownLayout.visibility == View.GONE) {
@@ -61,6 +63,7 @@ class DropdownAdapter1(private val items: List<DataSource>,private val itemsDrop
 //                holder.buttonPlus.setImageResource(R.drawable.add) // Đặt hình ảnh mới (ví dụ: dấu cộng)
 //            }
 //        }
+
 
     }
 

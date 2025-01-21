@@ -3,5 +3,7 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="gray">#B0BEC5</color>
-    <color name="pink">#F48FB1</color>ẻ
+    <color name="pink">#F48FB1</color>
+    <color name="colorNormal">#000000</color> <!-- Màu bình thường -->
+    <color name="colorPressed">#FF0000</color> <!-- Màu khi nhấn -->
 </resources>

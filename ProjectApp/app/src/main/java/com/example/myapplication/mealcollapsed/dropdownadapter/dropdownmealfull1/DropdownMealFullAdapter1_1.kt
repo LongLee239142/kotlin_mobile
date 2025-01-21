@@ -5,6 +5,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
+import android.widget.Toast
 import androidx.recyclerview.widget.RecyclerView
 import com.example.myapplication.R
 
@@ -13,6 +14,8 @@ class DropdownMealFullAdapter1_1(private val items: List<DataSourceDropdown1_1>)
     inner class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         val imageProduct: ImageView = itemView.findViewById(R.id.imageProduct)
         val textView: TextView = itemView.findViewById(R.id.titleProduct)
+        val imageView: ImageView = itemView.findViewById(R.id.chevronImageView)
+        val textEdit: TextView = itemView.findViewById(R.id.editTextView)
 
     }
     override fun onCreateViewHolder(
@@ -32,6 +35,12 @@ class DropdownMealFullAdapter1_1(private val items: List<DataSourceDropdown1_1>)
 
         // Thiết lập tên sản phẩm
         holder.textView.text = item.tilteName
+        holder.imageView.setOnClickListener {
+            Toast.makeText(holder.itemView.context, "You want to edit ?", Toast.LENGTH_SHORT).show()
+        }
+        holder.textEdit.setOnClickListener {
+            Toast.makeText(holder.itemView.context, "You want to edit ?", Toast.LENGTH_SHORT).show()
+        }
     }
 
     override fun getItemCount() = items.size

@@ -34,7 +34,8 @@
                 android:layout_height="29dp"
                 android:layout_gravity="center"
                 android:contentDescription="@string/burgers"
-                android:src="@drawable/arrow_right" />
+                android:src="@drawable/image_selector" />
+
 
             <!-- Văn bản bên dưới hình ảnh -->
             <TextView
@@ -44,11 +45,10 @@
                 android:layout_gravity="center"
                 android:textStyle="bold"
                 android:gravity="center"
+                android:textColor="@color/text_color_selector"
                 android:text="See all"
-                android:textColor="#000000"
                 android:textSize="19sp" />
+
         </LinearLayout>
     </androidx.cardview.widget.CardView>
-
-    <!-- Nhãn "NEW" nổi lên trên -->
 </RelativeLayout>

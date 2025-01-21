@@ -38,8 +38,6 @@ class AllCategory : AppCompatActivity() {
             Category("Chicken", R.drawable.ic_burgers),
             Category("Salads", R.drawable.image_10,"FAVS"),
             Category("Grocery", R.drawable.image_8),
-            Category("Chicken", R.drawable.ic_burgers),
-            Category("Chicken", R.drawable.ic_burgers),
             Category("Chicken", R.drawable.image_10,"FAVS"),
             Category("Chinese", R.drawable.ic_burgers)
         )

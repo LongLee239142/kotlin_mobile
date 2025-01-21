@@ -1,6 +1,7 @@
 package com.example.myapplication
 
 import android.os.Bundle
+import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import com.example.myapplication.catergorypage.CustomListItem1
@@ -28,5 +29,8 @@ class CategoryPage : AppCompatActivity() {
         val customList1 = CustomListItem2(this, list_1)
         binding.listItem1.adapter = customList
         binding.listItem2.adapter = customList1
+        binding.backButton.setOnClickListener{
+            Toast.makeText(applicationContext,"You have click on Back",Toast.LENGTH_SHORT).show()
+        }
     }
 }

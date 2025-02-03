@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_margin ="10dp"
+    android:layout_height="wrap_content"
+    tools:context=".MainActivity">
+
+<!--    <androidx.appcompat.widget.AppCompatButton-->
+<!--        android:id="@+id/customButton"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:background="@drawable/custom_button_background"-->
+<!--        android:text="tuhoc"-->
+<!--        android:textColor="@android:color/black"-->
+<!--        android:textStyle="bold"-->
+<!--        android:padding="16dp" />-->
+    <TextView
+        android:id="@+id/list_data"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_corner"
+        android:padding="16dp"
+        android:text="jacky chan"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginBottom="0dp"/>
+</RelativeLayout>

@@ -1,5 +1,6 @@
 package com.example.myapplication
 
+import android.content.Intent
 import android.os.Bundle
 import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
@@ -9,6 +10,7 @@ import com.example.myapplication.catergorypage.CustomListItem2
 import com.example.myapplication.catergorypage.OutData1
 import com.example.myapplication.catergorypage.OutData2
 import com.example.myapplication.databinding.ActivityCatergoryPageBinding
+import com.example.myapplication.databinding.ActivityMain2Binding
 
 class CategoryPage : AppCompatActivity() {
     private lateinit var binding: ActivityCatergoryPageBinding
@@ -31,6 +33,8 @@ class CategoryPage : AppCompatActivity() {
         binding.listItem2.adapter = customList1
         binding.backButton.setOnClickListener{
             Toast.makeText(applicationContext,"You have click on Back",Toast.LENGTH_SHORT).show()
+            val intent1 = Intent(this, AllCategory::class.java)
+            startActivity(intent1)
         }
     }
 }

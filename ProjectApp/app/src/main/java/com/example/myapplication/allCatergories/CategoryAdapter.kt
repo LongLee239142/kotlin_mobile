@@ -1,7 +1,6 @@
 package com.example.myapplication.allCatergories
 
 import android.annotation.SuppressLint
-import android.graphics.Color
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -30,15 +29,16 @@ class CategoryAdapter(private val categories: List<Category>) :
         val category = categories[position]
         holder.image.setImageResource(category.imageRes)
         holder.text.text = category.name
-        if (categories[position].label == null){
+        if (categories[position].label == null) {
             holder.label.visibility = View.GONE
-        }else{
-            when(categories[position].label){
-                "NEW" ->{
+        } else {
+            when (categories[position].label) {
+                "NEW" -> {
                     holder.label.setBackgroundResource(R.drawable.label_background)
                     holder.label.text = "NEW"
                 }
-                "FAVS" ->{
+
+                "FAVS" -> {
                     holder.label.setBackgroundResource(R.drawable.label_background2)
                     holder.label.text = "FAVS"
                 }

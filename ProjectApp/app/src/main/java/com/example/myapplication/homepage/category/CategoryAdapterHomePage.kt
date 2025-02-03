@@ -1,6 +1,7 @@
 package com.example.myapplication.homepage.category
 
 import android.annotation.SuppressLint
+import android.content.Intent
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -8,6 +9,7 @@ import android.widget.ImageView
 import android.widget.TextView
 import android.widget.Toast
 import androidx.recyclerview.widget.RecyclerView
+import com.example.myapplication.AllCategory
 import com.example.myapplication.R
 import com.example.myapplication.allCatergories.Category
 
@@ -87,17 +89,17 @@ class CategoryAdapterHomePage(private val categories: List<Category>) :
 //            }
 //        }
         else if (holder is ExtraViewHolder) {
-//            holder.imageItem.setImageResource(R.drawable.arrow_right) // Ảnh mặc định
             holder.nameItem.text = "See all" // Văn bản mặc định
-            // Biến trạng thái click
-            // Xử lý sự kiện onClick
-            holder.itemView.setOnClickListener {
-                holder.itemView.setOnClickListener {
-                    Toast.makeText(holder.itemView.context, "You want to see all", Toast.LENGTH_SHORT).show()
-                }
 
+            holder.itemView.setOnClickListener {
+                Toast.makeText(holder.itemView.context, "You want to see all", Toast.LENGTH_SHORT)
+                    .show()
+                // Sử dụng context từ itemView
+                val intent1 = Intent(holder.itemView.context, AllCategory::class.java)
+                holder.itemView.context.startActivity(intent1)
             }
         }
+
     }
 
     override fun getItemCount(): Int {

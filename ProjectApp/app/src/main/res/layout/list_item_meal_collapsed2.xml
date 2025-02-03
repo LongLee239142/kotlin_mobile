@@ -1,11 +1,10 @@
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
 
-    android:orientation="vertical"
-    android:layout_marginTop="5dp">
+    android:layout_marginTop="5dp"
+    android:orientation="vertical">
 
     <!-- Tiêu đề mục (Dropdown) -->
 
@@ -13,9 +12,9 @@
         android:id="@+id/headerLayout2"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:gravity="center_vertical"
-        android:background="#EFF2F5"
         android:layout_marginTop="5dp"
+        android:background="#EFF2F5"
+        android:gravity="center_vertical"
         android:orientation="horizontal"
         android:padding="18dp"
         android:paddingVertical="8dp">
@@ -28,6 +27,7 @@
             android:text="Slide Item"
             android:textSize="20sp"
             android:textStyle="" />
+
         <LinearLayout
             android:layout_width="100dp"
             android:layout_height="match_parent"
@@ -47,8 +47,8 @@
         <ImageView
             android:id="@+id/imageView2"
             android:layout_width="48dp"
-            android:layout_gravity="right"
             android:layout_height="wrap_content"
+            android:layout_gravity="right"
             android:layout_weight="1"
             app:srcCompat="@drawable/add" />
     </LinearLayout>
@@ -58,17 +58,25 @@
         android:id="@+id/dropdownLayout2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="@color/white"
         android:orientation="vertical"
-        android:visibility="gone"
         android:padding="8dp"
-        android:background="@color/white">
+        android:visibility="gone">
 
-        <TextView
-            android:id="@+id/itemDetail2"
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/dropdown_menu_meal_full2"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="BBQ Sauce\nBeef Patty\nLettuce"
-            android:textSize="14sp" />
+            android:layout_height="match_parent" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/dropdown_menu_meal_full2_1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/dropdown_menu_meal_full2_2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
 
     </LinearLayout>
 </LinearLayout>

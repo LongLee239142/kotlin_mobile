@@ -11,13 +11,13 @@
       <SelectionState runConfigName="MealCollapsed">
         <option name="selectionMode" value="DROPDOWN" />
       </SelectionState>
-      <SelectionState runConfigName="CategoryPage">
-        <option name="selectionMode" value="DROPDOWN" />
-      </SelectionState>
       <SelectionState runConfigName="MealCollapsed (1)">
         <option name="selectionMode" value="DROPDOWN" />
       </SelectionState>
       <SelectionState runConfigName="MealCollapsed (2)">
+        <option name="selectionMode" value="DROPDOWN" />
+      </SelectionState>
+      <SelectionState runConfigName="AllCategory">
         <option name="selectionMode" value="DROPDOWN" />
       </SelectionState>
     </selectionStates>

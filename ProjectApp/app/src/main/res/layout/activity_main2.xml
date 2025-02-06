@@ -114,6 +114,7 @@
                 android:padding="5dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
+                android:layout_marginTop="-10dp"
                 android:background="@color/white"
                 android:clipToPadding="false"
                 android:paddingTop="0dp"
